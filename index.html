@@ -91,5 +91,100 @@ Hides an element by default (opacity: 0, transform: scale(0.9))</p>
     </div>
   </div>
 
+  <table style="background-color:white;">
+    <theah>
+      <tr>
+        <td>Home Work Solution</td>
+      </tr>
+    </theah>
+    <tbody>
+      <tr>
+        <td>
+          <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Glowing & Reveal Effects</title>
+  <style>
+    body {
+      background-color: #111;
+      color: white;
+      font-family: 'Arial', sans-serif;
+      padding: 50px;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 40px;
+      color: #0ff;
+      text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 15px #00f;
+    }
+
+    /* 1. Glowing Animation for .level-up */
+    .level-up {
+      font-size: 48px;
+      color: #fff;
+      animation: glow 1.5s infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
+      }
+      to {
+        text-shadow: 0 0 20px #ff0, 0 0 30px #0f0, 0 0 40px #0ff;
+      }
+    }
+
+    /* 2. Reveal-on-hover effect */
+    .hover-container {
+      margin-top: 80px;
+      display: inline-block;
+      padding: 30px;
+      background: #222;
+      border: 2px solid #555;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .hover-container:hover {
+      box-shadow: 0 0 20px #0ff;
+    }
+
+    .reveal-on-hover {
+      opacity: 0;
+      transform: scale(0.9);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .hover-container:hover .reveal-on-hover {
+      opacity: 1;
+      transform: scale(1);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Visual Effects Demo</h1>
+
+  <div class="level-up">Level Up!</div>
+
+  <div class="hover-container">
+    Hover to Reveal
+    <div class="reveal-on-hover" style="margin-top: 20px; color: #0ff;">
+      🎉 You found me!
+    </div>
+  </div>
+
+</body>
+</html>
+
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
 </body>
 </html>
